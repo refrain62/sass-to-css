@@ -1,0 +1,68 @@
+<html>
+<head>
+<style>
+    .title {
+        font-family: 'Kaisei Opti', serif;
+        font-size: 3rem;
+    }
+
+    .item {
+        background: #fff;
+        width: min(80%, 500px);
+        padding: 1rem;
+        margin: 2rem auto;
+        border-radius: 1rem;
+
+        .title {
+            color: #0bd;
+            font-size: 2rem;
+        }
+
+        .desc {
+            line-height: 1.7;
+        }
+
+        &:hover {
+            box-shadow: 0 0 1rem #999;
+        }
+
+        &:first-of-type {
+            margin-top: 3rem;
+        }
+    }
+
+    body {
+        font-family: san-serif;
+        text-align: center;
+        background: #ddd;
+    }
+</style>
+    <title>変数</title>
+</head>
+<body>
+    <h1 class="title">
+        CSSでネスト(.title)
+    </h1>
+
+    <div class="item">
+        <h2 class="title">
+            .item の中の .title
+        </h2>
+        <p class="desc">
+            [item]クラスのついた div の中身。
+            適当に文章をかいておくよー。
+        </p>
+    </div>
+    
+    <div class="item">
+        <h2 class="title">
+            .item の中の .title 2
+        </h2>
+        <p class="desc">
+            [desc]クラスのついた p。
+            [item]クラスのついた div の中身。
+            今日も楽しい一日になるといいねー。
+        </p>
+    </div>
+</body>
+</html>
